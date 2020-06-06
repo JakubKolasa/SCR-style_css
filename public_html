@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+
+<head>
+    <title>Nasza strona</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Łukasz Iwan Jakub Kolasa</h1>
+        <p> Projekt 5 SCR</p>
+    </div>
+
+
+    <div class="navbar">
+        <a href="http://mariusz.makuchowski.staff.iiar.pwr.wroc.pl/main.php" target="_blank">Link</a>
+        <a href="https://pl.wikipedia.org/wiki/Turku%C4%87_podjadek" target="_blank">Link</a>
+    </div>
+
+    <div class="main">
+        <h2>Zwierzęta</h2>
+        <h5>Podstawowe informacje </h5>
+
+
+        <table>
+
+            <tr>
+                <th>Zwierze</th>
+                <th>Ilość oczu</th>
+                <th>Ilość odnóży</th>
+                <th>Domowe</th>
+            </tr>
+            <tr>
+                <td>Pies</td>
+                <td>2</td>
+                <td>4</td>
+                <td>TAK</td>
+            </tr>
+            <tr>
+                <td>Kot</td>
+                <td>2</td>
+                <td>4</td>
+                <td>TAK</td>
+            </tr>
+            <tr>
+                <td>Dzik</td>
+                <td>2</td>
+                <td>4</td>
+                <td>NIE</td>
+            </tr>
+            <tr>
+                <td>Pająk</td>
+                <td>8</td>
+                <td>8</td>
+                <td>TAK/NIE</td>
+            </tr>
+            <tr>
+                <td>Turkuć podjadek</td>
+                <td>2</td>
+                <td>6</td>
+                <td>NIE</td>
+            </tr>
+            <tr>
+                <td>Chomik</td>
+                <td>2</td>
+                <td>4</td>
+                <td>TAK</td>
+            </tr>
+        </table>
+
+
+        <br>
+        <h2>Obrazki zwierząt</h2>
+        <div class="img"
+            style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Mieszaniec_czarny_978.jpg/1024px-Mieszaniec_czarny_978.jpg');">
+        </div>
+        <div class="img"
+            style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Felis_catus-cat_on_snow.jpg/1280px-Felis_catus-cat_on_snow.jpg');">
+        </div>
+        <div class="img"
+            style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Gemeine_Maulwurfsgrille_Gryllotalpa_gryllotalpa_2.JPG/1280px-Gemeine_Maulwurfsgrille_Gryllotalpa_gryllotalpa_2.JPG');">
+        </div>
+
+        <h2>Skrypty</h2>
+
+        <button onclick="ShowText()">Otwórz okienko</button>
+        <script>
+            function ShowText() {
+                var text;
+                var input = prompt("Wpisz coś:");
+                if (input == null) {
+                    text = "Anulowano";
+                } else {
+                    text = "Wpisałeś " + input;;
+                }
+                document.getElementById("demo").innerHTML = text;
+            }
+        </script>
+
+        <p id="demo"></p>
+
+       
+
+        <li>
+            <script>
+                document.write("Ostatnio modyfikowane: " + document.lastModified + "");
+            </script>
+        </li>
+        <li>
+            <script>
+
+                var time = new Date();
+
+                var conv_time = time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds();
+                document.write("Jest godzina: " + conv_time); //wyswietl w postaci HH:MM:SS
+            </script>
+        </li>
+
+
+    </div>
+
+
+    <div class="footer">
+        <h2>Stopka</h2>
+        <p>Coś tam</p>
+    </div>
+
+</body>
+
+</html>

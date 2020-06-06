@@ -1,0 +1,87 @@
+    <style>
+        /*style CSS*/
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        /* Główny nagłowek strony*/
+        .header {
+            padding: 100px;
+            text-align: center;
+            background: #b803ff;
+            color: rgb(255, 191, 200);
+        }
+
+        /* Zwiekszenie rozmiaru czcionki w naglowkach */
+        .header h1 {
+            font-size: 70px;
+        }
+
+        /*zolty  pasek z linkami */
+        .navbar {
+            overflow: hidden;
+            background-color: #ffff00;
+            top: 0;
+        }
+
+        /* Wyglad hiperlaczy */
+        .navbar a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 20px 250px;
+            text-decoration: underline ;
+            /*podkreslniki ^*/
+        }
+
+
+
+        /* Zmiana koloru hiperlaczy po najechaniu na nie myszka*/
+        .navbar a:hover {
+            background-color: #ff0000;
+            color: white;
+        }
+
+        /*wyglad tabeli*/
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+
+        th,
+        td {
+            padding: 5px;
+            text-align: center;
+            border-bottom: 5px dotted #b803ff;
+        }
+
+        /*najechanie na tabele*/
+        tr:hover {
+            background-color: #00ff00;
+        }
+
+        /*Do wstawienia obrazka*/
+        .img {
+            float: left;
+            width: 33%;
+            height: 400px;
+            background-size: cover;
+        }
+
+
+        /* Stopka */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #0000ff;
+        }
+
+        /*glowna czesc strony*/
+        .main {
+            padding: 20px
+        }
+    </style>
